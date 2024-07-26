@@ -151,6 +151,8 @@ body {
     grid-row: 1 / 2;
 }
 
+/* HEADER TOP---------- */
+
 .header-top {
     border-bottom: 0.1rem solid #eee;
     padding: 1.5rem;
@@ -169,6 +171,250 @@ body {
 .header-top i {
     font-size: 2rem;
     color: #1aa1f5;
+}
+
+/* HEADER POSTS--------------------- */
+
+.header-post {
+    background-color: rgb(12, 122, 122);
+    
+    padding: 1rem;
+    border-bottom: 0.1rem solid #eee;
+    
+    display: flex;
+    /* alinea por el centro Y */
+    align-items: center;
+}
+
+.header-img-wrapper {
+    width: 4rem;
+    height: 4rem;
+    /* espaciado por la derecha */
+    margin-right: 1.5rem;
+}
+
+.header-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-post input {
+    width: 35rem;
+    height: 3rem;
+    border: 0.1rem solid #d6e1e9;
+    border-radius: 3rem;
+    background-color: #d6e1e9;
+    padding: 0.4rem 1.5rem;
+}
+
+.header-post i {
+    font-size: 2.5rem;
+    color: #1aa1f5;
+    margin: 1rem;
+}
+
+
+/*  POSTS--------------------- */
+
+.posts {
+    background-color: aquamarine;
+
+    /* 2 columna y todo las filas */
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+}
+
+.post {
+    /* background-color: rebeccapurple; */
+
+    display: flex;
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+/* USER AVATAR ---------------- */
+.user-avatar {
+    width: 6rem;
+    height: 6rem; 
+    margin-right: 1.5rem;
+    /* revisar */
+    flex-shrink: 0;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* POST CONTENT---------------- */
+
+.post-user-info {
+    margin: 1rem 0;
+
+    display: flex;
+    /* ALINEA POR X */
+    align-items: center;
+}
+
+.post-user-info h4 {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+.post-user-info i {
+    font-size: 1.6rem;
+    color: #1aa1f5;
+    margin-right: 0.5rem;
+}
+
+.post-user-info span {
+    font-size: 1.6rem;
+}
+
+.post-text {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.post-img {
+    width: 48rem;
+    height: 30rem;
+}
+
+.post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.post-icons {
+    margin-top: 1rem;
+}
+
+.post-icons i {
+    font-size: 1.8rem;
+    color: #868383;
+    margin-right: 6rem;
+}
+
+/*  FOLLOW--------------------- */
+
+.follow {
+    /* background-color: RED; */
+    background-color: #fff;
+
+    position: fixed;
+    top: 8rem;
+    left: 57%;
+    width: 35rem;
+}
+
+.follow-heading {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.follow-user {
+    /* background-color:rgb(191, 191, 226); */
+
+    display: flex;
+    /* alinea por y */
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.follow-user-img {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+
+.follow-user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.follow-user-info h4,
+.follow-user-info p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.follow-btn {
+    margin-left: auto;
+    
+    width: 9rem;
+    background-color: #fff;
+    color: #1aa1f5;
+    padding: 0.7rem 0.5rem;
+    border: 0.1rem solid #1aa1f5;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    
+}
+
+.follow-link {
+    /* background-color:red; */
+    margin: 2rem 1rem;
+}
+
+.follow-link a {
+    text-decoration: none;
+    color: #1aa1f5;
+    font-size: 1.5rem;
+}
+
+.follow-footer {
+    background-color: #f0f8fd;
+}
+
+.follow-footer ul {
+    list-style: none;
+    display: flex;
+    padding: 2rem 0;
+}
+
+.follow-footer a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #868383;
+    margin: 0 0.7rem;
+}
+
+
+
+/* --------------  BUTTON POST --------------------- */
+
+
+.post-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 68%;
+    width: 12rem;
+    padding: 1.5rem 1rem;
+    background-color: #1aa1f5;
+    color: #fff;
+    font-size: 2rem;
+    border: 0.1rem solid #1aa1f5;
+    border-radius: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.post-btn:hover {
+    background-color: #117abb;
 }
 
 
